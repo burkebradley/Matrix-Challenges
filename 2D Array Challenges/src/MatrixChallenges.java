@@ -6,6 +6,7 @@ public class MatrixChallenges
 			{
 				challengeOne();
 				challengeTwo();
+				challengeThree();
 				
 			}
 		public static void challengeOne()
@@ -29,7 +30,38 @@ public class MatrixChallenges
 			}
 		public static void challengeTwo()
 		{
-			s
+			String mustang [][] = new String [5][3];
+
+			for (int row = 0; row < mustang.length; row++)
+				{
+					for (int col = 0; col < mustang[row].length; col++)
+						{
+							mustang [row][col] = "Mustang";
+							System.out.print(mustang [row][col] + " ");
+						}
+					System.out.println(" ");
+				}
+			
+			
+		}
+		
+		public static void challengeThree()
+		{
+			int firstNumber = 1;
+			int sum = 0;
+			int numbers [][] = new int [3][3];
+			for (int row = 0; row < numbers.length; row++)
+				{
+					for (int col = 0; col < numbers [row].length; col++)
+						{
+							numbers [row][col] =  firstNumber;
+							firstNumber += 1;
+							System.out.print(numbers[row][col] + " ");
+						}
+					System.out.println(" ");
+				}
+			sum = numbers[0][0] + numbers [0][2] + numbers [2][0] + numbers [2][2];
+			System.out.println(sum);
 		}
 
 	}
